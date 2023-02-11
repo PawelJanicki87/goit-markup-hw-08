@@ -1,0 +1,56 @@
+/*--header--*/
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  background-color: #fff;
+}
+.text__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+/*--banner--*/
+.text__banner {
+  max-width: 696px;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+}
+.text__banner--button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+}
+/*--contents--*/
+
+.text__contents {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+}
+.text__contents--subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+/*--work--team--customers--*/
+.third__header {
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 0.03em;
+}

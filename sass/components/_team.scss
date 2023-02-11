@@ -1,0 +1,86 @@
+.team__title {
+  display: flex;
+  text-align: center;
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: $letter-spacing;
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background: $third-color;
+    box-shadow: $box-shadow-pics;
+    border-radius: var(--border-radius-pics);
+  }
+}
+.team__wraper {
+  box-sizing: border-box;
+  display: block;
+  padding: 30px 0;
+
+  .team__wraper--name {
+    display: block;
+    text-align: center;
+
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: $letter-spacing;
+  }
+
+  .team__wraper--profesion {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: $sixth-color;
+  }
+}
+/*---------------------------------------------social-links-----------*/
+.team__icon--list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
+.team__icon--item {
+  display: flex;
+  justify-content: center;
+
+  .team__icon--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    fill: $social-logo-color;
+    background-color: $third-color;
+    border-radius: 50%;
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 44px;
+      height: 44px;
+      fill: $third-color;
+      background-color: $secondary-color;
+      border-radius: 50%;
+      transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

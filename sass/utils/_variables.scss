@@ -1,0 +1,77 @@
+$main-font: 'Roboto', sans-serif;
+$second-font: 'Raleway', sans-serif;
+$letter-spacing: 0.03em; /*----typical----*/
+
+$primary-color: #212121;
+$secondary-color: #2196f3; /*----nav-link .link----*/
+$third-color: #ffffff; /*---index-button---*/
+$forth-color: blue; /*--logo---*/
+
+$fifth-color: #000000; /*--logo---*/
+$sixth-color: #757575;
+$mail-color: rgba(255, 255, 255, 0.6);
+$modal-color: rgba(117, 117, 117, 0.5);
+$slider-color: #2f303a;
+$social-logo-color: #afb1b8;
+
+$background-body-color: #fff;
+$background-portfolio-img: #ececec;
+$background-color-team: #f5f4fa; /*-- backgrand-color team--*/
+$footer-social-link-background: rgba(255, 255, 255, 0.1);
+$work-text-background: rgba(47, 48, 58, 0.8);
+$background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/banner/descop/main_banner.jpg);
+$overlay-background: rgba(33, 150, 243, 0.9);
+$color-mail: rgba(255, 255, 255, 0.6);
+$background-backdrop: rgba(0, 0, 0, 0.2);
+
+$header-border: 1px solid #ececec; /*--header--*/
+$border-portfolio-wraper: 1px solid #eeeeee;
+$border-radius-pics: 0px 0px 4px 4px;
+$border-modal: 1px solid rgba(33, 33, 33, 0.2);
+
+$input-border: 1px solid rgba(255, 255, 255, 0.3);
+
+$box-shadow-button-banner: 0px 4px 4px rgba(0, 0, 0, 0.15); /*solution_button*/
+$box-shadow-pics: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$box-shadow-button-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+$box-shadow-portfolio: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+
+$card-img-box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+  0px 1px 1px 0px #0000001f;
+
+$filter-footer: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+/*-------------transicion--------------*/
+
+$main-transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$transitionn-card-overlay: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-banner-button: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-icon-social: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+  fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$input-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$modal-policy-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-backdrop: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+$transition-modal: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-modal-form: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$portfolio-button-transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+  color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+$overlay-position-transicion: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$card-position-box-shadow: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+$social-logo-backgrand-color: 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+  fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+/*--card-transicion---*/
+$transistion-card-shadow: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-card-overlay: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,0 +1,78 @@
+.card__list {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+}
+
+.card__item {
+  position: relative;
+  transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: $card-img-box-shadow;
+
+    &__item:nth-child(n + 7) {
+      margin-bottom: 0;
+    }
+  }
+}
+.card {
+  &__info {
+    padding: 20px 0 24px 24px;
+
+    border-left: $border-portfolio-wraper;
+    border-right: $border-portfolio-wraper;
+    border-bottom: $border-portfolio-wraper;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: $letter-spacing;
+    color: $sixth-color;
+  }
+}
+.card {
+  &__position {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    inset: 0;
+    padding: 49px 45px 49px 24px;
+    height: 294px;
+    background: $overlay-background;
+    top: 0;
+    transform: translateY(101%);
+    transition: $transition-card-overlay;
+    pointer-events: auto;
+  }
+  &__item:hover &__overlay {
+    transform: translateY(0);
+  }
+
+  &__overlay-text {
+    font-size: 18px;
+    line-height: 1.556;
+    color: $third-color;
+    letter-spacing: $letter-spacing;
+  }
+}

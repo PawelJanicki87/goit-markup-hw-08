@@ -1,0 +1,27 @@
+.banner {
+  background-color: var(--third-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--third-color);
+
+  .banner__title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    color: $third-color;
+  }
+
+  .banner__button {
+    padding: 10px 41px;
+
+    border-radius: 4px;
+    border: none;
+    background-color: $secondary-color;
+    color: $third-color;
+    box-shadow: $box-shadow-button-banner;
+    cursor: pointer;
+    transition: $transition-banner-button;
+  }
+}

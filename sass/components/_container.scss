@@ -1,0 +1,40 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  align-items: center;
+
+  .header & {
+    display: flex;
+    align-items: center;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .banner & {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents &,
+  .work &,
+  .team &,
+  .customers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer & {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .portfolio &,
+  .card & {
+    display: flex;
+    justify-content: center;
+  }
+}

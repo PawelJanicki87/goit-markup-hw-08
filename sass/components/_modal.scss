@@ -1,0 +1,186 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 40px;
+  width: 528px;
+  min-height: 581px;
+  background: $third-color;
+  box-shadow: $box-shadow-pics;
+  border-radius: 4px;
+  transition: $transition-modal;
+  transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+  opacity: 1;
+
+  &__button--close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: $third-color;
+    border: $border-modal;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__button--close-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .is-hidden & {
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    opacity: 0;
+  }
+}
+
+.modal-form__header {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: $letter-spacing;
+  color: $primary-color;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__field {
+  font-size: 12px;
+  line-height: 1.667;
+  letter-spacing: 0.01em;
+  color: $sixth-color;
+}
+
+.modal-form__field:not(:nth-of-type(4)) {
+  margin-bottom: 10px;
+}
+
+.modal-form__input-wraper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+
+.modal-form__input {
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border: $border-modal;
+  background: $third-color;
+  border-radius: 4px;
+  transition: $input-transition;
+  outline: none;
+}
+
+.modal-form__input:focus + .modal-form__icon {
+  fill: $secondary-color;
+}
+.modal-form__input:focus {
+  border-color: $secondary-color;
+}
+
+.modal-form__icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 15px;
+  fill: $primary-color;
+  transform: translateY(-50%);
+  transition: $transition-modal-form;
+}
+.modal-form__input:focus,
+.modal-form__icon:focus {
+  fill: $secondary-color;
+}
+.modal-form__message {
+  margin-top: 4px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  border: $border-modal;
+  background: $third-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  transition: $input-transition;
+
+  &::placeholder {
+    color: $modal-color;
+  }
+
+  &:focus {
+    border-color: $secondary-color;
+  }
+}
+
+.modal-form__policy-text {
+  margin: 20px auto 30px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: $letter-spacing;
+  color: $sixth-color;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $primary-color;
+    border-radius: 2px;
+  }
+}
+
+.modal-form__policy:checked + .modal-form__policy-text::before {
+  background-color: $secondary-color;
+  border: 0.2px solid $secondary-color;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='M3.95703 7.75166L3.88825 7.68604L3.81923 7.75141L2.93123 8.59258L2.85486 8.66492L2.93097 8.73753L6.42671 12.0724L6.49574 12.1382L6.56476 12.0724L14.069 4.91352L14.1449 4.84116L14.069 4.76881L13.1873 3.92764L13.1183 3.86183L13.0493 3.92761L6.49577 10.1735L3.95703 7.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: $modal-policy-transition;
+}
+
+.visually-hiden {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.modal-form__policy-link {
+  color: $secondary-color;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-form__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 76px;
+  width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $third-color;
+  background: $secondary-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid $secondary-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $box-shadow-button-banner;
+  }
+}

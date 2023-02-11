@@ -1,0 +1,29 @@
+.contents__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  .contents__item {
+    max-width: 270px;
+  }
+
+  .contents__icon--bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $background-color-team;
+  }
+
+  .contents__title {
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+
+  .contents__text {
+    margin-top: 10px;
+    color: $sixth-color;
+  }
+}

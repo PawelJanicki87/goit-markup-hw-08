@@ -1,0 +1,21 @@
+.logo {
+  margin-right: 93px;
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: $letter-spacing;
+  text-decoration: none;
+
+  &__font--accent {
+    color: $secondary-color;
+  }
+
+  &__font--second {
+    color: $fifth-color;
+  }
+
+  &__font--dark {
+    color: $third-color;
+  }
+}

@@ -1,0 +1,140 @@
+.footer {
+  display: block;
+
+  padding: 60px 0;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: $letter-spacing;
+
+  .footer__first--part {
+    margin-right: 70px;
+  }
+  .address {
+    margin-top: 20px;
+    font-style: normal;
+  }
+  &__contact--list {
+    color: $mail-color;
+  }
+  &__contact--item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__contact--link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $secondary-color;
+    }
+  }
+  .footer__contact--link-street {
+    cursor: pointer;
+    color: $third-color;
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $secondary-color;
+    }
+  }
+}
+/*--foter--center--*/
+
+.footer__center {
+  margin-right: 78px;
+  color: $third-color;
+  text-transform: uppercase;
+}
+
+.footer__icon--list {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+
+  .footer__icon--item:not(:last-child) {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__icon--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    fill: $third-color;
+    background: $footer-social-link-background;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: $secondary-color;
+      fill: $third-color;
+      transition: $transition-icon-social;
+    }
+  }
+}
+
+/*--footer--newsletter--*/
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+
+  color: $third-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: $letter-spacing;
+
+  .footer__form--newsletter {
+    display: flex;
+  }
+  .footer__newsletter--email {
+    display: flex;
+  }
+
+  .footer__input--newsletter {
+    margin-top: 20px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    width: 358px;
+    border: $input-border;
+
+    filter: $filter-footer;
+    border-radius: 4px;
+    background-color: $slider-color;
+    outline: none;
+    transition: $input-transition;
+
+    letter-spacing: $letter-spacing;
+    color: $mail-color;
+
+    &:focus {
+      border-color: $secondary-color;
+    }
+  }
+}
+.footer__button--newsletter {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  height: 50px;
+  padding: 10px 24px 10px 42px;
+  width: 200px;
+
+  color: $third-color;
+  background: $secondary-color;
+  box-shadow: $box-shadow-button-banner;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  .footer__button--icon {
+    margin-left: 24px;
+  }
+}

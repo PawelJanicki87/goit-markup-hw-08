@@ -1,0 +1,15 @@
+.portfolio__list {
+  display: flex;
+
+  margin-bottom: 50px;
+  gap: 8px;
+}
+.portfolio__button {
+  background-color: var(--background-color-team);
+  box-shadow: var(--box-shadow-button-portfolio);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
