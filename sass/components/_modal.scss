@@ -184,3 +184,23 @@
     box-shadow: $box-shadow-button-banner;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+  .modal-form__policy-text {
+    font-size: 12px;
+    line-height: 1.667;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+  .modal-form__policy-text {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}

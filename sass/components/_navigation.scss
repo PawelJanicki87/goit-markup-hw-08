@@ -11,9 +11,7 @@
 .nav__item {
   position: relative;
 }
-.nav__link--product {
-  color: $secondary-color;
-}
+
 .nav__link {
   color: $primary-color;
   transition: $main-transition;
@@ -34,4 +32,7 @@
 }
 .nav__link.active:after {
   background-color: $secondary-color;
+}
+.nav__link--product {
+  color: $secondary-color;
 }

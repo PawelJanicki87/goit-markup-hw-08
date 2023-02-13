@@ -417,6 +417,7 @@ span {
   list-style: none;
   gap: 10px;
 }
+
 .team__icon--link {
   display: flex;
   justify-content: center;
@@ -460,12 +461,14 @@ span {
 
   margin: auto;
 }
-.customers__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .customers__item {
   display: flex;
   justify-content: center;
+}
+
+.customers__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .customers__link {
@@ -473,11 +476,7 @@ span {
   justify-content: center;
   align-items: center;
 }
-.customers__link:hover,
-.customers__link:focus {
-  border-color: var(--secondary-color);
-  fill: var(--secondary-color);
-}
+
 .customers__social--link {
   width: 170px;
   height: 92px;
@@ -485,6 +484,12 @@ span {
   border: 1px solid var(--social-logo-color);
   border-radius: 4px;
   transition: var(--transition-icon-social);
+}
+
+.customers__link:hover,
+.customers__link:focus {
+  border-color: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 
 /*----------------------------------------footer-----*/
@@ -511,13 +516,10 @@ span {
   font-style: normal;
 }
 
-.address {
-  margin-top: 20px;
-  font-style: normal;
-}
 .footer__contact--list {
   color: var(--mail-color);
 }
+
 .footer__contact--item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -551,11 +553,13 @@ span {
 
   margin-top: 20px;
 }
+
 .footer__icon--item:not(:last-child) {
   margin-right: 10px;
   display: flex;
   justify-content: center;
 }
+
 .footer__icon--link {
   display: flex;
   align-items: center;
@@ -566,6 +570,7 @@ span {
   background: var(--footer-social-link-background);
   border-radius: 50%;
 }
+
 .footer__icon--link:hover,
 .footer__icon--link:focus {
   background-color: var(--secondary-color);
@@ -836,6 +841,7 @@ span {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
 }
+
 .modal-form__button:hover {
   cursor: pointer;
   box-shadow: var(--box-shadow-button-banner);
@@ -885,7 +891,7 @@ span {
 }
 
 /*------------------------------------------------------------------------------------portfolio-card-----*/
-.photo_container {
+.card .container {
   justify-content: center;
   display: flex;
   width: 1200px;

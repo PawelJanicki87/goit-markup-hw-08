@@ -1,49 +1,56 @@
-.team__title {
-  display: flex;
-  text-align: center;
-  padding-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: $letter-spacing;
+.team {
+  background-color: $background-color-team;
 }
 
 .team__list {
-  display: flex;
-  gap: 30px;
-
-  &__item {
+  @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .team__item {
     background: $third-color;
     box-shadow: $box-shadow-pics;
     border-radius: var(--border-radius-pics);
+
+    @media screen and (max-width: 767.9px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px * 2) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 30px * 4) / 4);
+    }
   }
-}
-.team__wraper {
-  box-sizing: border-box;
-  display: block;
-  padding: 30px 0;
+
+  .team__wraper {
+    padding: 30px 10px;
+  }
 
   .team__wraper--name {
-    display: block;
     text-align: center;
 
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 18.75px;
+    line-height: 1.188p;
     letter-spacing: $letter-spacing;
   }
 
   .team__wraper--profesion {
-    display: block;
     text-align: center;
     margin-bottom: 16px;
     font-size: 16px;
-    line-height: 18.75px;
+    line-height: 1.188;
     color: $sixth-color;
   }
 }
+
 /*---------------------------------------------social-links-----------*/
 .team__icon--list {
   display: flex;

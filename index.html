@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <!--nav-->
         <nav class="nav">
           <a class="logo" href="/WebStudio"
@@ -66,12 +66,89 @@
           </li>
         </ul>
       </div>
+      <button type="button" class="mobile-menu-burger" data-menu-open>
+        <svg class="mobile-menu-btn__icon mobile-menu-btn__icon-open" width="40" height="40">
+          <use class="mobile-menu-btn__icon" href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu-close" data-menu-close>
+          <svg class="mobile-menu-btn__icon mobile-menu-btn__icon-close" width="40" height="40">
+            <use class="mobile-menu-btn__icon" href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-navigation">
+          <ul class="mobile-navigation-list list">
+            <li class="mobile-navigation-list__item">
+              <a class="mobile-navigation-list__link link active" href="./index.html">Agencja</a>
+            </li>
+            <li class="mobile-navigation-list__item">
+              <a class="mobile-navigation-list__link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-navigation-list__item">
+              <a class="mobile-navigation-list__link link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="mobile-addres-list list">
+          <li class="mobile-addres-list__item">
+            <a
+              class="mobile-addres-list__link mobile-addres-list__link-phone link"
+              href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+
+          <li class="mobile-addres-list__item">
+            <a
+              class="mobile-addres-list__link mobile-addres-list__link-mail link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="header-social-list list">
+          <li class="header-social-list__item">
+            <a class="header-social-list__link link" href="#">Instagram</a>
+          </li>
+          <li class="header-social-list__item">
+            <a
+              class="header-social-list__link link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="header-social-list__item">
+            <a
+              class="header-social-list__link link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="header-social-list__item">
+            <a
+              class="header-social-list__link link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
       <!--slider-->
-      <section class="banner">
-        <div class="container">
+      <section class="banner section">
+        <div class="banner_container container">
           <h1 class="banner__title text__banner">efektywne rozwiązania dla waszego biznesu</h1>
           <button class="banner__button text__banner--button" type="button" data-modal-open>
             Zamów usługę
@@ -80,7 +157,7 @@
       </section>
 
       <!--contents-->
-      <section class="contents">
+      <section class="contents section">
         <div class="container">
           <ul class="contents__list">
             <li class="contents__item">
@@ -89,7 +166,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="contents__title text__contents">lorem ipsum</h3>
+              <h3 class="contents__title third__header">lorem ipsum</h3>
               <p class="contents__text text__contents--subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada.
@@ -102,7 +179,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="contents__title text__contents">lorem ipsum</h3>
+              <h3 class="contents__title third__header">lorem ipsum</h3>
               <p class="contents__text text__contents--subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada.
@@ -115,7 +192,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="contents__title text__contents">lorem ipsum</h3>
+              <h3 class="contents__title third__header">lorem ipsum</h3>
               <p class="contents__text text__contents--subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada.
@@ -128,7 +205,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="contents__title text__contents">lorem ipsum</h3>
+              <h3 class="contents__title third__header">lorem ipsum</h3>
               <p class="contents__text text__contents--subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada.
@@ -140,19 +217,21 @@
 
       <!--work-->
 
-      <section class="work">
+      <section class="work section">
         <div class="container">
-          <h2 class="work__title third__header">Czym się zajmujemy</h2>
+          <h2 class="work__title second__header">Czym się zajmujemy</h2>
 
           <ul class="work__list">
             <li class="work__item">
               <img
+                srcset="./images/work/desktop/coding-desktop.jpg 1x, ./images/work/desktop/coding-desktop@2x 2x.jpg"
                 class="work__photo"
-                src="./images/specialization/Coding.jpg"
-                alt="kodowanie strony, projektu"
+                src="./images/work/desktop/coding-desktop.jpg"
+                alt="finalizowanie projektu"
                 width="370"
                 height="294"
               />
+
               <div class="work__background">
                 <h4 class="work__subtitle text__contents">aplikacje komputerowe</h4>
               </div>
@@ -160,12 +239,14 @@
 
             <li class="work__item">
               <img
+                srcset="./images/work/desktop/mobile-app-desktop.jpg 1x, ./images/work/desktop/mobile-app-desktop@2x 2x.jpg"
                 class="work__photo"
-                src="./images/specialization/MobileApp.jpg"
+                src="./images/work/desktop/mobile-app-desktop.jpg"
                 alt="finalizowanie projektu"
                 width="370"
                 height="294"
               />
+
               <div class="work__background">
                 <h4 class="work__subtitle text__contents">aplikacje mobilne</h4>
               </div>
@@ -173,12 +254,14 @@
 
             <li class="work__item">
               <img
+                srcset="./images/work/desktop/color-pallete-desktop.jpg 1x, ./images/work/desktop/color-pallete-desktop@2.jpg 2x.jpg,"
                 class="work__photo"
-                src="./images/specialization/ColorPalette.jpg"
-                alt="rezultat projektu"
+                src="./images/work/desktop/color-pallete-desktop.jpg"
+                alt="finalizowanie projektu"
                 width="370"
                 height="294"
               />
+
               <div class="work__background">
                 <h4 class="work__subtitle text__contents">rozwiązania graficzne</h4>
               </div>
@@ -189,21 +272,46 @@
 
       <!--team-->
 
-      <section class="team">
+      <section class="team section">
         <div class="container">
-          <h2 class="team__title third__header">Nasz zespół</h2>
+          <h2 class="second__header">Nasz zespół</h2>
 
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/team/ProductDesigner.jpg"
-                alt="John Doe, czlonek zespolu"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/ProductDesigner-mobile.jpg    1x,
+                    ./images/team/mobile/ProductDesigner-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/ProductDesigner-tablet.jpg    1x,
+                    ./images/team/tablet/ProductDesigner-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/ProductDesigner-desktop.jpg    1x,
+                    ./images/team/desktop/ProductDesigner-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/mobile/ProductDesigner-mobile.jpg"
+                  alt="John Doe - Product Designer"
+                  width="450"
+                />
+              </picture>
               <div class="team__wraper">
-                <h4 class="team__wraper--name text__team">John Doe</h4>
+                <h4 class="team__wraper--name third__header">John Doe</h4>
                 <p class="team__wraper--profesion">Product Designer</p>
 
                 <ul class="team__icon--list">
@@ -240,15 +348,40 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/team/FrontDeveloper.jpg"
-                alt="John Doe, czlonek zespolu"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/FrontendDeveloper-mobile.jpg    1x,
+                    ./images/team/mobile/FrontendDeveloper-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/FrontendDeveloper-tablet.jpg    1x,
+                    ./images/team/tablet/FrontendDeveloper-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/desktop/FrontendDeveloper-desktop.jpg    1x,
+                    ./images/team/desktop/FrontendDeveloper-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/mobile/FrontendDeveloper-mobile.jpg"
+                  alt="John Doe - Frontend Developer"
+                  width="450"
+                />
+              </picture>
               <div class="team__wraper">
-                <h4 class="team__wraper--name text__team">John Doe</h4>
+                <h4 class="team__wraper--name third__header">John Doe</h4>
                 <p class="team__wraper--profesion">Frontend Developer</p>
 
                 <ul class="team__icon--list">
@@ -285,15 +418,39 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/team/Marketing.jpg"
-                alt="John Doe, czlonek zespolu"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/Marketing-mobile.jpg    1x,
+                    ./images/team/mobile/Marketing-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/Marketing-tablet.jpg    1x,
+                    ./images/team/tablet/Marketing-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/Marketing-desktop.jpg    1x,
+                    ./images/team/desktop/Marketing-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/mobile/Marketing-mobile.jpg"
+                  alt="John Doe - Marketing"
+                  width="450"
+                />
+              </picture>
               <div class="team__wraper">
-                <h4 class="team__wraper--name text__team">John Doe</h4>
+                <h4 class="team__wraper--name third__header">John Doe</h4>
                 <p class="team__wraper--profesion">Marketing</p>
 
                 <ul class="team__icon--list">
@@ -330,15 +487,40 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/team/UIDesigner.jpg"
-                alt="John Doe, czlonek zespolu"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/UIDesigner-mobile.jpg    1x,
+                    ./images/team/mobile/UIDesigner-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/UIDesigner-tablet.jpg    1x,
+                    ./images/team/tablet/UIDesigner-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/UIDesigner-desktop.jpg    1x,
+                    ./images/team/desktop/UIDesigner-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./images/team/mobile/UIDesigner-mobile.jpg"
+                  alt="John Doe - UI Designer"
+                  width="450"
+                />
+              </picture>
               <div class="team__wraper">
-                <h4 class="team__wraper--name text__team">John Doe</h4>
+                <h4 class="team__wraper--name tthird__header">John Doe</h4>
                 <p class="team__wraper--profesion">UI Designer</p>
 
                 <ul class="team__icon--list">
@@ -378,9 +560,9 @@
       </section>
 
       <!--customers-->
-      <section class="customers">
+      <section class="customers section">
         <div class="container">
-          <h2 class="customers__title third__header">Nasi klienci</h2>
+          <h2 class="customers__title second__header">Nasi klienci</h2>
 
           <ul class="customers__list">
             <li class="customers__item">
@@ -436,28 +618,34 @@
     </main>
     <!--footer-->
     <footer class="footer">
-      <div class="container">
-        <div class="footer__first--part">
-          <a class="logo" href="/WebStudio"
-            ><span class="logo__font--accent">Web</span
-            ><span class="logo__font--dark">Studio</span></a
-          >
+      <div class="footer__container container">
+        <div calss="footer__wrapper">
+          <div class="footer__first--part">
+            <a class="logo" href="/WebStudio"
+              ><span class="logo__font--accent">Web</span
+              ><span class="logo__font--dark">Studio</span></a
+            >
 
-          <address class="address">
-            <ul class="footer__contact--list">
-              <li class="footer__contact--item">
-                <a class="footer__contact--link footer__contact--link-street"
-                  >m. Warszawa, Aleje Jerozolimskie 21</a
-                >
-              </li>
-              <li class="footer__contact--item">
-                <a class="footer__contact--link" href="mailto:info@exaple.com">info@example.com</a>
-              </li>
-              <li class="footer__contact--item">
-                <a class="footer__contact--link" href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </address>
+            <address class="address">
+              <ul class="footer__contact--list">
+                <li class="footer__contact--item">
+                  <a class="footer__contact--link footer__contact--link-street"
+                    >m. Warszawa, Aleje Jerozolimskie 21</a
+                  >
+                </li>
+                <ul class="footer__contact--rest">
+                  <li class="footer__contact--item">
+                    <a class="footer__contact--link" href="mailto:info@exaple.com"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="footer__contact--item">
+                    <a class="footer__contact--link" href="tel:+48111111111">+48 111 111 111</a>
+                  </li>
+                </ul>
+              </ul>
+            </address>
+          </div>
         </div>
 
         <div class="footer__center text__contents">
@@ -497,7 +685,6 @@
           </ul>
         </div>
         <!--newsletter-->
-
         <div class="footer__newsletter text__content">
           <form
             class="footer__form--newsletter"
@@ -506,7 +693,7 @@
             formvalidate
           >
             <label>
-              Zapisz się do newslettera
+              <p class="footer__newsletter-title">Zapisz się do newslettera</p>
               <div class="footer__newsletter--email">
                 <input
                   class="footer__input--newsletter"
@@ -514,7 +701,7 @@
                   name="email"
                   placeholder="E-mail"
                 />
-                <button class="footer__button--newsletter text__banner--button" type="submit">
+                <button class="btn footer__button--newsletter" type="submit">
                   Zapisz się
                   <svg class="footer__button--icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-send"></use>
@@ -590,10 +777,9 @@
         </form>
       </div>
     </div>
-
-    <!--Java Script Modal Window->
+    <!--Java Script Modal Window-->
     <script src="./js/modal.js"></script>
-    <!--Java Scrript Mobile Menu -->
+    <!--Java Script Mobile Menu-->
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

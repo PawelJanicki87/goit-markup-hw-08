@@ -4,7 +4,8 @@
 
 .banner {
   background-color: $third-color;
-  background-image: $background-image;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/banner/mobile/banner-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,19 +15,19 @@
   padding-top: 94px;
 }
 
-.work,
-.team,
-.customers,
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.team {
-  background-color: $background-color-team;
-}
-
 .footer {
-  padding: 60px 0;
   background-color: $slider-color;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+
+    &:not(.contents) {
+      padding-bottom: 94px;
+    }
+  }
 }

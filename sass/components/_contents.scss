@@ -1,11 +1,6 @@
 .contents__list {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
-
-  .contents__item {
-    max-width: 270px;
-  }
+  flex-wrap: wrap;
 
   .contents__icon--bg {
     display: flex;
@@ -18,6 +13,7 @@
   }
 
   .contents__title {
+    text-align: center;
     text-transform: uppercase;
     color: $primary-color;
   }
@@ -25,5 +21,40 @@
   .contents__text {
     margin-top: 10px;
     color: $sixth-color;
+  }
+
+  @media screen and (max-width: 767.9px) {
+    .contents__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .contents__title {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin: -15px;
+    .contents__item {
+      flex-basis: calc((100% - 30px * 2) / 2);
+      margin: 15px;
+    }
+    .contents__title {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    justify-content: space-between;
+
+    .contents__item {
+      max-width: 270px;
+      align-items: center;
+    }
+    .contents__title {
+      text-align: left;
+    }
   }
 }
