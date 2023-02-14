@@ -1,15 +1,20 @@
+.header {
+  background-color: $third-color;
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
 .nav {
   display: flex;
-  align-items: center;
 }
 
 .nav__list {
   display: flex;
-  gap: 46px;
-}
-
-.nav__item {
-  position: relative;
 }
 
 .nav__link {
@@ -22,8 +27,8 @@
   &::after {
     content: '';
     display: block;
-    position: absolute;
-    top: 47px;
+    position: relative;
+    top: 35px;
     width: 100%;
     height: 4px;
     background: transparent;
@@ -35,4 +40,58 @@
 }
 .nav__link--product {
   color: $secondary-color;
+}
+
+@media screen and (max-width: 767.9px) {
+  .header__container {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  .nav__link,
+  .contact__link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .header-container {
+    display: flex;
+    padding-top: 26px;
+    padding-bottom: 21px;
+    padding-left: 16px;
+    align-items: center;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  .contact__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__item:not(:last-child) {
+    margin-right: 46px;
+  }
+
+  .contact__list {
+    &__link--product-tel {
+      margin-left: 50px;
+    }
+
+    &__icon {
+      margin-right: 10px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 1.143;
+    }
+  }
 }

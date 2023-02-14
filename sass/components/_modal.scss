@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
   padding: 40px;
-  width: 528px;
+  width: calc(100% - 30px);
   min-height: 581px;
   background: $third-color;
   box-shadow: $box-shadow-pics;
@@ -12,29 +12,28 @@
   transition: $transition-modal;
   transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
   opacity: 1;
+}
+.modal__button--close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: $third-color;
+  border: $border-modal;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-  &__button--close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    background: $third-color;
-    border: $border-modal;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+.modal__button--close-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
 
-  &__button--close-icon {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
-
-  .is-hidden & {
-    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-    opacity: 0;
-  }
+.is-hidden {
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  opacity: 0;
 }
 
 .modal-form__header {
@@ -51,7 +50,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .modal-form__field {
   font-size: 12px;
   line-height: 1.667;
@@ -79,7 +77,6 @@
   transition: $input-transition;
   outline: none;
 }
-
 .modal-form__input:focus + .modal-form__icon {
   fill: $secondary-color;
 }
@@ -124,8 +121,7 @@
 
 .modal-form__policy-text {
   margin: 20px auto 30px;
-  font-size: 14px;
-  line-height: 1.714;
+
   letter-spacing: $letter-spacing;
   color: $sixth-color;
 

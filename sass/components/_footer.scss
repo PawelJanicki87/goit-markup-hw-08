@@ -176,20 +176,6 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 1199px) {
-  .footer {
-    &__first-part,
-    &__center {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    &__newsletter {
-      text-align: center;
-    }
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer {
     &__wrapper {
@@ -233,5 +219,18 @@
   .newsletter__email {
     width: 358px;
     margin-right: 12px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer {
+    &__first-part,
+    &__center {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    &__newsletter {
+      text-align: center;
+    }
   }
 }

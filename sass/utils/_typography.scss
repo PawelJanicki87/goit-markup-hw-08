@@ -1,6 +1,11 @@
 /*--header--*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
   background-color: #fff;
+  position: relative;
 }

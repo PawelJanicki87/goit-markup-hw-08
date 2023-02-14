@@ -16,12 +16,35 @@
       color: $secondary-color;
     }
   }
+}
+.contact__icon {
+  margin-right: 8px;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .contact__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-list__item:not(:last-child) {
+    margin-right: 46px;
+  }
+
   .contact__link--product-tel {
     margin-left: 50px;
-  }
-  .contact__icon {
-    margin-right: 10px;
-    vertical-align: middle;
-    fill: currentColor;
+
+    &__icon {
+      margin-right: 10px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 1.143;
+    }
   }
 }
