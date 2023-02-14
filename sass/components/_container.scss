@@ -13,7 +13,9 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-
+    .team {
+      padding-top: 94px;
+    }
     .header & {
       display: flex;
       align-items: center;
