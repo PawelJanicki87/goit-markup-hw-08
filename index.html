@@ -66,13 +66,14 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="mobile-menu-burger" data-menu-open>
+
+      <button type="button" class="mobile-menu-burger js-open-menu" data-menu-open>
         <svg class="mobile-menu-btn__icon mobile-menu-btn__icon-open" width="40" height="40">
           <use class="mobile-menu-btn__icon" href="./images/icons.svg#icon-menu-open"></use>
         </svg>
       </button>
       <div class="mobile-menu" data-menu>
-        <button type="button" class="mobile-menu-close" data-menu-close>
+        <button type="button" class="mobile-menu-close js-close-menu" data-menu-close>
           <svg class="mobile-menu-btn__icon mobile-menu-btn__icon-close" width="40" height="40">
             <use class="mobile-menu-btn__icon" href="./images/icons.svg#icon-menu-close"></use>
           </svg>
@@ -224,7 +225,7 @@
           <ul class="work__list">
             <li class="work__item">
               <img
-                srcset="./images/work/desktop/coding-desktop.jpg 1x, ./images/work/desktop/coding-desktop@2x 2x.jpg"
+                srcset="./images/work/desktop/coding-desktop.jpg 1x, ./images/work/desktop/coding-desktop@2x.jpg x2"
                 class="work__photo"
                 src="./images/work/desktop/coding-desktop.jpg"
                 alt="finalizowanie projektu"
@@ -239,7 +240,7 @@
 
             <li class="work__item">
               <img
-                srcset="./images/work/desktop/mobile-app-desktop.jpg 1x, ./images/work/desktop/mobile-app-desktop@2x 2x.jpg"
+                srcset="./images/work/desktop/mobile-app-desktop.jpg 1x, ./images/work/desktop/mobile-app-desktop@2x.jpg x2"
                 class="work__photo"
                 src="./images/work/desktop/mobile-app-desktop.jpg"
                 alt="finalizowanie projektu"
@@ -254,7 +255,7 @@
 
             <li class="work__item">
               <img
-                srcset="./images/work/desktop/color-pallete-desktop.jpg 1x, ./images/work/desktop/color-pallete-desktop@2.jpg 2x.jpg,"
+                srcset="./images/work/desktop/color-pallete-desktop.jpg 1x, ./images/work/desktop/color-pallete-desktop@2.jpg x2"
                 class="work__photo"
                 src="./images/work/desktop/color-pallete-desktop.jpg"
                 alt="finalizowanie projektu"
@@ -684,33 +685,33 @@
             </li>
           </ul>
         </div>
-        <!--newsletter-->
-        <div class="footer__newsletter text__content">
-          <form
-            class="footer__form--newsletter"
-            name="footer-newsletter"
-            autocomplete="on"
-            formvalidate
-          >
-            <label>
-              <p class="footer__newsletter-title">Zapisz się do newslettera</p>
-              <div class="footer__newsletter--email">
-                <input
-                  class="footer__input--newsletter"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
-                <button class="btn footer__button--newsletter" type="submit">
-                  Zapisz się
-                  <svg class="footer__button--icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </label>
-          </form>
-        </div>
+      </div>
+      <!--newsletter-->
+      <div class="footer__newsletter text__content">
+        <form
+          class="footer__form--newsletter"
+          name="footer-newsletter"
+          autocomplete="on"
+          formvalidate
+        >
+          <label>
+            <p class="footer__newsletter-title">Zapisz się do newslettera</p>
+            <div class="footer__newsletter--email">
+              <input
+                class="footer__input--newsletter"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button class="btn footer__button--newsletter" type="submit">
+                Zapisz się
+                <svg class="footer__button--icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </label>
+        </form>
       </div>
     </footer>
 
@@ -776,6 +777,7 @@
           <button class="modal-form__button" type="submit">Wyślij</button>
         </form>
       </div>
+    </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
