@@ -1,10 +1,12 @@
 .contact__list {
   display: flex;
   margin-left: auto;
+  gap: 5px;
 
   .contact__item {
     display: flex;
     white-space: nowrap;
+    font-size: 12px;
   }
   .contact__link {
     gap: 50px;
@@ -29,7 +31,6 @@
     flex-direction: column;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .navigation-list__item:not(:last-child) {
     margin-right: 46px;
@@ -43,7 +44,7 @@
     }
 
     &__link {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 1.143;
     }
   }
