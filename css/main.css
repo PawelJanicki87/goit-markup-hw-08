@@ -917,6 +917,55 @@ nav {
 .footer__button--icon {
   margin-left: 24px;
 }
+@media screen and (max-width: 1199px) {
+  .footer__left-side, .footer__center {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .footer__newsletter {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .footer__left-side {
+    margin-right: 144px;
+  }
+  .newsletter__email {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .footer__first--part {
+    margin-right: 70px;
+  }
+  .footer__center {
+    margin-right: 78px;
+  }
+  .footer__newsletter-title {
+    text-align: left;
+  }
+  .footer__newsletter--email {
+    display: flex;
+  }
+  .footer__newsletter--input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
 /*---modal-window--*/
 .modal {
   position: absolute;

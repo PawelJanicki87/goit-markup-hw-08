@@ -42,22 +42,21 @@
   &:focus {
     color: $secondary-color;
   }
+}
+.footer__contact--link-street {
+  cursor: pointer;
+  color: $third-color;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-  .footer__contact--link-street {
-    cursor: pointer;
-    color: $third-color;
-    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: $secondary-color;
-    }
+  &:hover,
+  &:focus {
+    color: $secondary-color;
   }
 }
 
 .footer__newsletter--input {
   padding: 16px;
-  width: 294px;
+  width: 100%;
   height: 50px;
   border: $input-border;
   filter: $filter-footer;
@@ -180,43 +179,53 @@
     }
 
     &__newsletter {
-      text-align: center;
+      display: flex;
     }
   }
 }
 
 @media screen and (min-width: 768px) {
-  .footer__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
-
-  .footer__first--part {
-    margin-right: 144px;
-  }
-
-  .footer__newsletter--email {
-    max-width: 450px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .footer {
-    &__container {
+    &__wrapper {
       display: flex;
-      align-items: center;
       justify-content: center;
       align-items: baseline;
     }
 
     &__first--part {
-      margin-right: 70px;
+      margin-right: 144px;
     }
+  }
 
-    &__center {
-      margin-right: 78px;
+  .newsletter--email {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .footer__first--part {
+    margin-right: 70px;
+    .footer__contact--rest {
+      text-align: left;
     }
+  }
+  .footer__center {
+    margin-right: 78px;
+    text-align: left;
+  }
+  .footer__newsletter {
+    text-align: left;
+  }
+
+  .footer__newsletter--input {
+    width: 358px;
+    margin-right: 12px;
   }
 
   .footer__form--newsletter {
@@ -224,7 +233,6 @@
   }
 
   .footer__newsletter--email {
-    width: 358px;
-    margin-right: 12px;
+    display: flex;
   }
 }
