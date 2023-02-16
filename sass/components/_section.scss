@@ -12,6 +12,11 @@
     background-image: url('../images/banner/mobile/banner-mobile@2.jpg');
   }
 }
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: url('../images/banner/desktop/main_banner.jpg');
+  }
+}
 .contents {
   padding-top: 94px;
 }
@@ -19,9 +24,15 @@
 .footer {
   background-color: $slider-color;
 }
-.banner .section {
+.banner {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    .banner {
+      background-image: url('../images/banner/desktop/main_banner.jpg');
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -32,7 +43,6 @@
     }
   }
 }
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;

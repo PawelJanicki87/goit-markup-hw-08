@@ -16,6 +16,7 @@
     .team {
       padding-top: 94px;
     }
+
     .header & {
       display: flex;
       align-items: center;
@@ -24,11 +25,12 @@
       padding-bottom: 25px;
     }
 
-    .portfolio &,
-    .card & {
+    .portfolio .container &,
+    .card {
       display: flex;
       justify-content: center;
     }
+
     .footer {
       width: 1200px;
     }

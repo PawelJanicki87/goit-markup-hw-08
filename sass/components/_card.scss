@@ -6,7 +6,6 @@
   list-style: none;
   gap: 30px;
 }
-
 .card__item {
   position: relative;
   transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -74,5 +73,27 @@
     line-height: 1.556;
     color: $third-color;
     letter-spacing: $letter-spacing;
+  }
+
+  @media screen and (max-width: 767.9px) {
+    margin-bottom: 30px;
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
